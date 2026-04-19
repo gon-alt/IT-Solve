@@ -17,7 +17,7 @@ export default function LandingPage() {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("https://formspree.io", {
+      const response = await fetch("https://formspree.io/f/mlgadyek", {
         method: "POST",
         body: formData,
         headers: { 'Accept': 'application/json' }
