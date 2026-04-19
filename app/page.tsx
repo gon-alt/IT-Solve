@@ -1,6 +1,39 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react'; 
+
+import { useRouter } from 'next/navigation'; 
 
 export default function LandingPage() {
+
+  const router = useRouter();
+  const [enviando, setEnviando] = useState(false);
+
+  // AGREGAR ESTA FUNCIÓN COMPLETA:
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setEnviando(true);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io", {
+        method: "POST",
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        router.push('/gracias'); // Redirección manual
+      } else {
+        alert("Error al enviar. Intenta de nuevo.");
+        setEnviando(false);
+      }
+    } catch (error) {
+      alert("Error de conexión.");
+      setEnviando(false);
+    }
+  }
+
   return (
     <div className="bg-slate-950 text-white min-h-screen font-sans relative">
       
@@ -83,7 +116,7 @@ export default function LandingPage() {
             <p className="text-slate-400">Por favor completá este diagnóstico. No te tomará más de 2 minutos.</p>
           </div>
           
-          <form action="https://formspree.io/f/mlgadyek" method="POST" className="space-y-10">
+          <form onSubmit={handleSubmit} className="space-y-10">
             {/* INFORMACIÓN GENERAL CON CONTACTO */}
 <div className="space-y-6">
   <h3 className="text-xl font-semibold text-blue-400 border-b border-slate-800 pb-2">Información del Negocio</h3>
@@ -192,9 +225,16 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <button type="submit" className="w-full bg-blue-600 hover:bg-blue-500 text-white py-4 rounded-lg font-bold text-lg shadow-lg transition-all">
-              Enviar Diagnóstico y Solicitar Presupuesto
+            <button 
+              type="submit" 
+              disabled={enviando}
+              className={`w-full py-4 rounded-xl font-bold text-white transition-all ${
+              enviando ? 'bg-slate-700 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-500 shadow-xl shadow-blue-500/20'
+              }`}>
+              {enviando ? 'Procesando envío...' : 'Enviar Relevamiento Técnico'}
             </button>
+
+            
           </form>
         </div>
       </section>
