@@ -56,7 +56,35 @@ export default function LandingPage() {
       </nav>
 
       {/* BOTÓN FLOTANTE WHATSAPP */}
-      
+    {/* BOTÓN FLOTANTE WHATSAPP CON LOGO */}
+<a
+  href="https://wa.me/5491176682185?text=hola"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    position: "fixed",
+    bottom: "20px",
+    right: "20px",
+    width: "60px",
+    height: "60px",
+    backgroundColor: "#25D366",
+    borderRadius: "50%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    boxShadow: "0 4px 10px rgba(0,0,0,0.3)"
+  }}
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    width="28"
+    height="28"
+    fill="white"
+  >
+    <path d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.7 5.4 2 7.8L.4 31.6l8-2.1c2.3 1.2 4.9 1.9 7.6 1.9 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4zm0 28.6c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5C4 20.8 3.4 18.5 3.4 16 3.4 9 9 3.4 16 3.4S28.6 9 28.6 16 23 29 16 29zm7.2-9.4c-.4-.2-2.3-1.1-2.7-1.2-.4-.1-.6-.2-.9.2-.3.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.6.2-.2.3-.4.5-.7.2-.3.1-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.7-.6-.6-.9-.6h-.8c-.3 0-.7.1-1 .5s-1.3 1.2-1.3 2.9 1.3 3.4 1.5 3.6c.2.2 2.6 4 6.4 5.6.9.4 1.6.6 2.1.8.9.3 1.7.2 2.3.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5z"/>
+  </svg>
+</a> 
 
       {/* HERO */}
       <header className="pt-40 pb-24 px-6 max-w-6xl mx-auto text-center">
@@ -170,6 +198,7 @@ export default function LandingPage() {
 
   </div>
 </section>
+
       {/* FORMULARIO CORTO */}
       <section id="contacto" className="py-16 bg-slate-900/50 border-y border-slate-800">
         <div className="max-w-xl mx-auto px-6">
