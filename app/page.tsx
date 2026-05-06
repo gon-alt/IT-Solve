@@ -277,13 +277,42 @@ export default function LandingPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="py-12 border-t border-slate-800 text-center">
-        <div className="flex items-center justify-center space-x-2 mb-4">
-          <code className="text-blue-400 font-bold">{`>_`}</code>
-          <span className="font-bold text-white">ITsolve</span>
-        </div>
-        <p className="text-sm text-slate-500">© 2026 | Soluciones IT para PyMEs</p>
-      </footer>
+      <footer className="py-12 border-t border-slate-800 text-center bg-[#050505]">
+  <div className="max-w-6xl mx-auto px-6">
+    <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-6">
+      
+      {/* Branding */}
+      <div className="flex items-center space-x-2">
+        <code className="text-blue-400 font-bold">{`>_`}</code>
+        <span className="font-bold text-white text-xl">ITsolve</span>
+      </div>
+
+      {/* Links de Recursos (El Blog "oculto") */}
+      <nav className="flex space-x-6 text-sm font-medium text-slate-400">
+        <a href="/blog/soporte-redes-infraestructura" className="hover:text-blue-400 transition-colors">
+          Infraestructura
+        </a>
+        <a href="/blog/automatizacion-bots-whatsapp" className="hover:text-blue-400 transition-colors">
+          Automatización
+        </a>
+        <a href="/blog" className="hover:text-blue-400 transition-colors">
+          Recursos
+        </a>
+      </nav>
+
+      {/* Contacto rápido */}
+      
+    </div>
+
+    {/* Línea final de Copyright */}
+    <div className="pt-8 border-t border-slate-800/50">
+      <p className="text-xs text-slate-600 uppercase tracking-widest">
+        © 2024 | Soluciones IT para PyMEs | ITsolve.ar
+      </p>
+    </div>
+  </div>
+</footer>
+
     </div>
   );
 }
