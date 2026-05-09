@@ -134,26 +134,68 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SECCIÓN DE PLANES */}
+{/* SECCIÓN DE PLANES */}
 <section className="py-16 px-6 max-w-6xl mx-auto">
   <div className="text-center mb-12">
     <h2 className="text-3xl font-bold text-white mb-4">Planes para tu negocio</h2>
     <p className="text-slate-400">Sin letra chica. Sin sorpresas.</p>
   </div>
+
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
     {/* BÁSICO */}
     <div className="p-8 bg-slate-900 border border-slate-800 rounded-2xl flex flex-col">
       <h3 className="text-xl font-bold mb-1">Básico</h3>
       <p className="text-slate-400 text-sm mb-6">Para el que quiere dejar de apagar incendios</p>
-      <div className="text-4xl font-extrabold text-white mb-6">$100.000<span className="text-lg text-slate-400 font-normal">/mes</span></div>
-      <ul className="space-y-3 text-slate-300 text-sm flex-1">
-        <li>✅ Tu problema resuelto ese mismo día</li>
-        <li>✅ Alguien que te responde, no una línea 0800</li>
-        <li>✅ Tus archivos importantes siempre respaldados</li>
-        <li className="text-slate-600">❌ Visita presencial</li>
-        <li className="text-slate-600">❌ Bot WhatsApp</li>
-      </ul>
+      <div className="text-4xl font-extrabold text-white mb-8">
+        $100.000<span className="text-lg text-slate-400 font-normal">/mes</span>
+      </div>
+      <div className="space-y-4 flex-1">
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">Soporte remoto</p>
+            <p className="text-slate-500 text-xs mt-0.5">Cuando algo falla, te atendemos</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">Backup en la nube</p>
+            <p className="text-slate-500 text-xs mt-0.5">Configuración inicial</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">
+              <a href="/blog/windows-defender" className="underline underline-offset-2 hover:text-blue-400 transition-colors">
+                Antivirus gestionado
+              </a>
+            </p>
+            <p className="text-slate-500 text-xs mt-0.5">Windows Defender configurado</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-3 opacity-35">
+          <span className="text-slate-600 mt-0.5">✕</span>
+          <div>
+            <p className="text-slate-400 text-sm font-medium line-through">Resumen mensual</p>
+          </div>
+          
+        </div>
+        <div className="flex items-start gap-3 opacity-35">
+          <span className="text-slate-600 mt-0.5">✕</span>
+          <div>
+            <p className="text-slate-400 text-sm font-medium line-through">Monitoreo de red</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-3 opacity-35">
+          <span className="text-slate-600 mt-0.5">✕</span>
+          <div>
+            <p className="text-slate-400 text-sm font-medium line-through">Le peleamos a tu ISP</p>
+          </div>
+        </div>
+      </div>
       <a href="#contacto" className="mt-8 text-center border border-slate-600 hover:border-blue-500 hover:text-blue-400 py-3 rounded-xl transition-all text-sm font-semibold">
         Empezar →
       </a>
@@ -166,14 +208,56 @@ export default function LandingPage() {
       </div>
       <h3 className="text-xl font-bold mb-1">Pro</h3>
       <p className="text-slate-400 text-sm mb-6">Para el que no puede permitirse que algo falle</p>
-      <div className="text-4xl font-extrabold text-white mb-6">$150.000<span className="text-lg text-slate-400 font-normal">/mes</span></div>
-      <ul className="space-y-3 text-slate-300 text-sm flex-1">
-        <li>✅ Respuesta en menos de 4 horas</li>
-        <li>✅ Tus archivos siempre respaldados</li>
-        <li>✅ Alguien que va a tu negocio cuando hace falta</li>
-        <li>✅ Sabés en todo momento si tu red está funcionando</li>
-        <li className="text-slate-600">❌ Bot WhatsApp</li>
-      </ul>
+      <div className="text-4xl font-extrabold text-white mb-8">
+        $150.000<span className="text-lg text-slate-400 font-normal">/mes</span>
+      </div>
+      <div className="space-y-4 flex-1">
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">Soporte remoto</p>
+            <p className="text-slate-500 text-xs mt-0.5">Cuando algo falla, te atendemos</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">Backup en la nube</p>
+            <p className="text-slate-500 text-xs mt-0.5">Monitoreo mensual</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">
+              <a href="/blog/windows-defender" className="underline underline-offset-2 hover:text-blue-400 transition-colors">
+                Antivirus gestionado
+              </a>
+            </p>
+            <p className="text-slate-500 text-xs mt-0.5">Microsoft Defender for Business</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">Resumen mensual</p>
+            <p className="text-slate-500 text-xs mt-0.5">De tu infraestructura</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">Monitoreo de red</p>
+            <p className="text-slate-500 text-xs mt-0.5">En tiempo real</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-3 opacity-35">
+          <span className="text-slate-600 mt-0.5">✕</span>
+          <div>
+            <p className="text-slate-400 text-sm font-medium line-through">Le peleamos a tu ISP</p>
+          </div>
+        </div>
+      </div>
       <a href="#contacto" className="mt-8 text-center bg-blue-600 hover:bg-blue-500 text-white py-3 rounded-xl transition-all text-sm font-semibold shadow-lg shadow-blue-500/20">
         Empezar →
       </a>
@@ -183,14 +267,58 @@ export default function LandingPage() {
     <div className="p-8 bg-slate-900 border border-slate-800 rounded-2xl flex flex-col">
       <h3 className="text-xl font-bold mb-1">Premium</h3>
       <p className="text-slate-400 text-sm mb-6">Para el que quiere olvidarse de la tecnología para siempre</p>
-      <div className="text-4xl font-extrabold text-white mb-6">$250.000<span className="text-lg text-slate-400 font-normal">/mes</span></div>
-      <ul className="space-y-3 text-slate-300 text-sm flex-1">
-        <li>✅ Respuesta en menos de 1 hora</li>
-        <li>✅ Tus archivos siempre respaldados</li>
-        <li>✅ Visitas sin límite cuando las necesitás</li>
-        <li>✅ Red monitoreada las 24hs</li>
-        <li>✅ Clientes atendidos por WhatsApp aunque vos no estés</li>
-      </ul>
+      <div className="text-4xl font-extrabold text-white mb-8">
+        $250.000<span className="text-lg text-slate-400 font-normal">/mes</span>
+      </div>
+      <div className="space-y-4 flex-1">
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">Soporte remoto</p>
+            <p className="text-slate-500 text-xs mt-0.5">Cuando algo falla, te atendemos</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">Backup en la nube</p>
+            <p className="text-slate-500 text-xs mt-0.5">Monitoreo + alertas automáticas</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">
+              <a href="/blog/windows-defender" className="underline underline-offset-2 hover:text-blue-400 transition-colors">
+                Antivirus gestionado
+              </a>
+            </p>
+            <p className="text-slate-500 text-xs mt-0.5">Solución profesional con panel XDR</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">Resumen mensual</p>
+            <p className="text-slate-500 text-xs mt-0.5">Detallado con métricas</p>
+          </div>
+          
+        </div>
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">Monitoreo de red</p>
+            <p className="text-slate-500 text-xs mt-0.5">Con informe mensual detallado</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-3">
+          <span className="text-emerald-400 mt-0.5">✅</span>
+          <div>
+            <p className="text-slate-200 text-sm font-medium">Le peleamos a tu ISP</p>
+            <p className="text-slate-500 text-xs mt-0.5">Gestionamos el reclamo por vos</p>
+          </div>
+        </div>
+      </div>
       <a href="#contacto" className="mt-8 text-center border border-slate-600 hover:border-emerald-500 hover:text-emerald-400 py-3 rounded-xl transition-all text-sm font-semibold">
         Empezar →
       </a>
@@ -198,6 +326,75 @@ export default function LandingPage() {
 
   </div>
 </section>
+
+{/* BOT WHATSAPP */}
+<section className="py-16 px-6 max-w-6xl mx-auto">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    <div>
+      <div className="inline-block px-4 py-1.5 mb-4 text-sm font-medium text-purple-400 bg-purple-400/10 border border-purple-400/20 rounded-full">
+        Servicio adicional
+      </div>
+      <h2 className="text-3xl font-bold text-white mb-4">
+        Tu negocio responde solo, aunque vos no estés
+      </h2>
+      <p className="text-slate-400 mb-6 leading-relaxed">
+        Configuramos un bot de WhatsApp personalizado para tu empresa. 
+        Atiende consultas, toma datos y filtra clientes las 24 horas, 
+        los 7 días de la semana — sin que tengas que estar pendiente del teléfono.
+      </p>
+      <ul className="space-y-3 text-slate-300 text-sm mb-8">
+        <li>✅ Menú interactivo adaptado a tu negocio</li>
+        <li>✅ Respuestas automáticas fuera de horario</li>
+        <li>✅ Captación de datos de clientes potenciales</li>
+        <li>✅ Derivación a persona real cuando hace falta</li>
+        <li>✅ Sin aplicaciones extra — funciona en tu WhatsApp actual</li>
+      </ul>
+      
+      <a
+        href="#contacto"
+        className="inline-block bg-purple-600 hover:bg-purple-500 px-6 py-3 rounded-xl font-semibold text-white transition-all shadow-lg shadow-purple-500/20"
+      >
+        Quiero saber más →
+      </a>
+    </div>
+
+    <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-3">
+      <div className="flex items-start gap-3">
+        <div className="bg-slate-800 rounded-xl p-3 text-2xl">👋</div>
+        <div className="bg-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 max-w-xs">
+          ¡Hola! Bienvenido a <strong>Tu Empresa</strong>. ¿En qué podemos ayudarte?
+        </div>
+      </div>
+      <div className="flex items-start gap-3">
+        <div className="bg-slate-800 rounded-xl p-3 text-2xl">📋</div>
+        <div className="bg-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 max-w-xs">
+          <p className="font-semibold mb-1">Elegí una opción:</p>
+          <p>1 · Consultar precios</p>
+          <p>2 · Hacer un pedido</p>
+          <p>3 · Hablar con alguien</p>
+        </div>
+      </div>
+      <div className="flex justify-end">
+        <div className="bg-blue-600 rounded-xl px-4 py-3 text-sm text-white max-w-xs">
+          1
+        </div>
+      </div>
+      <div className="flex items-start gap-3">
+        <div className="bg-slate-800 rounded-xl p-3 text-2xl">💬</div>
+        <div className="bg-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 max-w-xs">
+          Claro! Acá tenés nuestra lista de precios actualizada 👇
+        </div>
+      </div>
+      <p className="text-center text-xs text-slate-600 pt-2">
+        Demo ilustrativa — adaptamos el bot a tu negocio
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
 
       {/* FORMULARIO CORTO */}
       <section id="contacto" className="py-16 bg-slate-900/50 border-y border-slate-800">
@@ -307,7 +504,7 @@ export default function LandingPage() {
     {/* Línea final de Copyright */}
     <div className="pt-8 border-t border-slate-800/50">
       <p className="text-xs text-slate-600 uppercase tracking-widest">
-        © 2024 | Soluciones IT para PyMEs | ITsolve.ar
+        © 2026 | Soluciones IT para PyMEs | ITsolve.ar
       </p>
     </div>
   </div>
