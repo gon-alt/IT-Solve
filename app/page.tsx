@@ -49,7 +49,7 @@ export default function LandingPage() {
             </div>
             <span className="text-xl font-bold tracking-tight text-white">IT_solve</span>
           </div>
-          <a href="#contacto" className="text-sm font-medium bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-full transition-all">
+          <a href="#contacto" className=" font-medium bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-full transition-all">
             Diagnóstico Gratis
           </a>
         </div>
@@ -88,7 +88,7 @@ export default function LandingPage() {
 
       {/* HERO */}
       <header className="pt-40 pb-24 px-6 max-w-6xl mx-auto text-center">
-        <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-blue-400 uppercase bg-blue-400/10 border border-blue-400/20 rounded-full">
+        <div className="inline-block px-4 py-1.5 mb-6  font-medium tracking-wider text-blue-400 uppercase bg-blue-400/10 border border-blue-400/20 rounded-full">
           Consultoría IT para PyMEs
         </div>
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
@@ -146,7 +146,7 @@ export default function LandingPage() {
     {/* BÁSICO */}
     <div className="p-8 bg-slate-900 border border-slate-800 rounded-2xl flex flex-col">
       <h3 className="text-xl font-bold mb-1">Básico</h3>
-      <p className="text-slate-400 text-sm mb-6">Para el que quiere dejar de apagar incendios</p>
+      <p className="text-slate-400 text-slate-400 mb-3">Para el que quiere dejar de apagar incendios</p>
       <div className="text-4xl font-extrabold text-white mb-8">
         $100.000<span className="text-lg text-slate-400 font-normal">/mes</span>
       </div>
@@ -154,21 +154,21 @@ export default function LandingPage() {
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">Soporte remoto</p>
+            <p className="text-slate-200  font-medium">Soporte remoto</p>
             <p className="text-slate-500 text-xs mt-0.5">Cuando algo falla, te atendemos</p>
           </div>
         </div>
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">Backup en la nube</p>
+            <p className="text-slate-200  font-medium">Backup en la nube</p>
             <p className="text-slate-500 text-xs mt-0.5">Configuración inicial</p>
           </div>
         </div>
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">
+            <p className="text-slate-200  font-medium">
               <a href="/blog/windows-defender" className="underline underline-offset-2 hover:text-blue-400 transition-colors">
                 Antivirus gestionado
               </a>
@@ -179,24 +179,24 @@ export default function LandingPage() {
         <div className="flex items-start gap-3 opacity-35">
           <span className="text-slate-600 mt-0.5">✕</span>
           <div>
-            <p className="text-slate-400 text-sm font-medium line-through">Resumen mensual</p>
+            <p className="text-slate-400  font-medium line-through">Resumen mensual</p>
           </div>
           
         </div>
         <div className="flex items-start gap-3 opacity-35">
           <span className="text-slate-600 mt-0.5">✕</span>
           <div>
-            <p className="text-slate-400 text-sm font-medium line-through">Monitoreo de red</p>
+            <p className="text-slate-400  font-medium line-through">Monitoreo de red</p>
           </div>
         </div>
         <div className="flex items-start gap-3 opacity-35">
           <span className="text-slate-600 mt-0.5">✕</span>
           <div>
-            <p className="text-slate-400 text-sm font-medium line-through">Le peleamos a tu ISP</p>
+            <p className="text-slate-400  font-medium line-through">Reclamamos a tu proveedor de internet</p>
           </div>
         </div>
       </div>
-      <a href="#contacto" className="mt-8 text-center border border-slate-600 hover:border-blue-500 hover:text-blue-400 py-3 rounded-xl transition-all text-sm font-semibold">
+      <a href="#contacto" className="mt-8 text-center border border-slate-600 hover:border-blue-500 hover:text-blue-400 py-3 rounded-xl transition-all  font-semibold">
         Empezar →
       </a>
     </div>
@@ -207,29 +207,29 @@ export default function LandingPage() {
         MÁS ELEGIDO
       </div>
       <h3 className="text-xl font-bold mb-1">Pro</h3>
-      <p className="text-slate-400 text-sm mb-6">Para el que no puede permitirse que algo falle</p>
+      <p className="text-slate-400 text-slate-400 mb-3">Para el que no puede permitirse que algo falle</p>
       <div className="text-4xl font-extrabold text-white mb-8">
-        $150.000<span className="text-lg text-slate-400 font-normal">/mes</span>
+        $200.000<span className="text-lg text-slate-400 font-normal">/mes</span>
       </div>
       <div className="space-y-4 flex-1">
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">Soporte remoto</p>
+            <p className="text-slate-200  font-medium">Soporte remoto</p>
             <p className="text-slate-500 text-xs mt-0.5">Cuando algo falla, te atendemos</p>
           </div>
         </div>
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">Backup en la nube</p>
+            <p className="text-slate-200  font-medium">Backup en la nube</p>
             <p className="text-slate-500 text-xs mt-0.5">Monitoreo mensual</p>
           </div>
         </div>
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">
+            <p className="text-slate-200  font-medium">
               <a href="/blog/windows-defender" className="underline underline-offset-2 hover:text-blue-400 transition-colors">
                 Antivirus gestionado
               </a>
@@ -240,25 +240,25 @@ export default function LandingPage() {
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">Resumen mensual</p>
+            <p className="text-slate-200  font-medium">Resumen mensual</p>
             <p className="text-slate-500 text-xs mt-0.5">De tu infraestructura</p>
           </div>
         </div>
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">Monitoreo de red</p>
+            <p className="text-slate-200  font-medium">Monitoreo de red</p>
             <p className="text-slate-500 text-xs mt-0.5">En tiempo real</p>
           </div>
         </div>
         <div className="flex items-start gap-3 opacity-35">
           <span className="text-slate-600 mt-0.5">✕</span>
           <div>
-            <p className="text-slate-400 text-sm font-medium line-through">Le peleamos a tu ISP</p>
+            <p className="text-slate-400  font-medium line-through">Reclamamos a tu proveedor de internet</p>
           </div>
         </div>
       </div>
-      <a href="#contacto" className="mt-8 text-center bg-blue-600 hover:bg-blue-500 text-white py-3 rounded-xl transition-all text-sm font-semibold shadow-lg shadow-blue-500/20">
+      <a href="#contacto" className="mt-8 text-center bg-blue-600 hover:bg-blue-500 text-white py-3 rounded-xl transition-all  font-semibold shadow-lg shadow-blue-500/20">
         Empezar →
       </a>
     </div>
@@ -266,7 +266,7 @@ export default function LandingPage() {
     {/* PREMIUM */}
     <div className="p-8 bg-slate-900 border border-slate-800 rounded-2xl flex flex-col">
       <h3 className="text-xl font-bold mb-1">Premium</h3>
-      <p className="text-slate-400 text-sm mb-6">Para el que quiere olvidarse de la tecnología para siempre</p>
+      <p className="text-slate-400 mb-3">Para el que quiere olvidarse de la tecnología para siempre</p>
       <div className="text-4xl font-extrabold text-white mb-8">
         $250.000<span className="text-lg text-slate-400 font-normal">/mes</span>
       </div>
@@ -274,21 +274,21 @@ export default function LandingPage() {
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">Soporte remoto</p>
+            <p className="text-slate-200 font-medium">Soporte remoto</p>
             <p className="text-slate-500 text-xs mt-0.5">Cuando algo falla, te atendemos</p>
           </div>
         </div>
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">Backup en la nube</p>
+            <p className="text-slate-200  font-medium">Backup en la nube</p>
             <p className="text-slate-500 text-xs mt-0.5">Monitoreo + alertas automáticas</p>
           </div>
         </div>
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">
+            <p className="text-slate-200  font-medium">
               <a href="/blog/windows-defender" className="underline underline-offset-2 hover:text-blue-400 transition-colors">
                 Antivirus gestionado
               </a>
@@ -299,7 +299,7 @@ export default function LandingPage() {
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">Resumen mensual</p>
+            <p className="text-slate-200  font-medium">Resumen mensual</p>
             <p className="text-slate-500 text-xs mt-0.5">Detallado con métricas</p>
           </div>
           
@@ -307,19 +307,19 @@ export default function LandingPage() {
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">Monitoreo de red</p>
+            <p className="text-slate-200  font-medium">Monitoreo de red</p>
             <p className="text-slate-500 text-xs mt-0.5">Con informe mensual detallado</p>
           </div>
         </div>
         <div className="flex items-start gap-3">
           <span className="text-emerald-400 mt-0.5">✅</span>
           <div>
-            <p className="text-slate-200 text-sm font-medium">Le peleamos a tu ISP</p>
+            <p className="text-slate-200  font-medium">Reclamamos a tu proveedor de internet</p>
             <p className="text-slate-500 text-xs mt-0.5">Gestionamos el reclamo por vos</p>
           </div>
         </div>
       </div>
-      <a href="#contacto" className="mt-8 text-center border border-slate-600 hover:border-emerald-500 hover:text-emerald-400 py-3 rounded-xl transition-all text-sm font-semibold">
+      <a href="#contacto" className="mt-8 text-center border border-slate-600 hover:border-emerald-500 hover:text-emerald-400 py-3 rounded-xl transition-all  font-semibold">
         Empezar →
       </a>
     </div>
@@ -332,7 +332,7 @@ export default function LandingPage() {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     
     <div>
-      <div className="inline-block px-4 py-1.5 mb-4 text-sm font-medium text-purple-400 bg-purple-400/10 border border-purple-400/20 rounded-full">
+      <div className="inline-block px-4 py-1.5 mb-4  font-medium text-purple-400 bg-purple-400/10 border border-purple-400/20 rounded-full">
         Servicio adicional
       </div>
       <h2 className="text-3xl font-bold text-white mb-4">
@@ -343,7 +343,7 @@ export default function LandingPage() {
         Atiende consultas, toma datos y filtra clientes las 24 horas, 
         los 7 días de la semana — sin que tengas que estar pendiente del teléfono.
       </p>
-      <ul className="space-y-3 text-slate-300 text-sm mb-8">
+      <ul className="space-y-3 text-slate-300  mb-8">
         <li>✅ Menú interactivo adaptado a tu negocio</li>
         <li>✅ Respuestas automáticas fuera de horario</li>
         <li>✅ Captación de datos de clientes potenciales</li>
@@ -362,13 +362,13 @@ export default function LandingPage() {
     <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-3">
       <div className="flex items-start gap-3">
         <div className="bg-slate-800 rounded-xl p-3 text-2xl">👋</div>
-        <div className="bg-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 max-w-xs">
+        <div className="bg-slate-800 rounded-xl px-4 py-3  text-slate-300 max-w-xs">
           ¡Hola! Bienvenido a <strong>Tu Empresa</strong>. ¿En qué podemos ayudarte?
         </div>
       </div>
       <div className="flex items-start gap-3">
         <div className="bg-slate-800 rounded-xl p-3 text-2xl">📋</div>
-        <div className="bg-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 max-w-xs">
+        <div className="bg-slate-800 rounded-xl px-4 py-3  text-slate-300 max-w-xs">
           <p className="font-semibold mb-1">Elegí una opción:</p>
           <p>1 · Consultar precios</p>
           <p>2 · Hacer un pedido</p>
@@ -376,13 +376,13 @@ export default function LandingPage() {
         </div>
       </div>
       <div className="flex justify-end">
-        <div className="bg-blue-600 rounded-xl px-4 py-3 text-sm text-white max-w-xs">
+        <div className="bg-blue-600 rounded-xl px-4 py-3  text-white max-w-xs">
           1
         </div>
       </div>
       <div className="flex items-start gap-3">
         <div className="bg-slate-800 rounded-xl p-3 text-2xl">💬</div>
-        <div className="bg-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 max-w-xs">
+        <div className="bg-slate-800 rounded-xl px-4 py-3  text-slate-300 max-w-xs">
           Claro! Acá tenés nuestra lista de precios actualizada 👇
         </div>
       </div>
@@ -413,7 +413,7 @@ export default function LandingPage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm mb-2 text-slate-300">Nombre</label>
+                <label className="block  mb-2 text-slate-300">Nombre</label>
                 <input
                   name="nombre_negocio"
                   type="text"
@@ -423,7 +423,7 @@ export default function LandingPage() {
                 />
               </div>
               <div>
-                <label className="block text-sm mb-2 text-slate-300">Rubro</label>
+                <label className="block  mb-2 text-slate-300">Rubro</label>
                 <input
                   name="rubro"
                   type="text"
@@ -435,7 +435,7 @@ export default function LandingPage() {
             </div>
 
             <div>
-              <label className="block text-sm mb-2 text-slate-300">WhatsApp o Email</label>
+              <label className="block  mb-2 text-slate-300">WhatsApp o Email</label>
               <input
                 name="contacto_cliente"
                 type="text"
@@ -446,7 +446,7 @@ export default function LandingPage() {
             </div>
 
             <div>
-              <label className="block text-sm mb-2 text-slate-300">¿Cuál es tu mayor problema tecnológico hoy?</label>
+              <label className="block  mb-2 text-slate-300">¿Cuál es tu mayor problema tecnológico hoy?</label>
               <textarea
                 name="dolor"
                 rows={4}
@@ -485,7 +485,7 @@ export default function LandingPage() {
       </div>
 
       {/* Links de Recursos (El Blog "oculto") */}
-      <nav className="flex space-x-6 text-sm font-medium text-slate-400">
+      <nav className="flex space-x-6  font-medium text-slate-400">
         <a href="/blog/soporte-redes-infraestructura" className="hover:text-blue-400 transition-colors">
           Infraestructura
         </a>
